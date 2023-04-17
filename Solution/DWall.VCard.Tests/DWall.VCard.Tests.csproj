@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ReadMe.txt" />
+    <None Remove="Resources\UnicodeNameSample.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Resources\UnicodeNameSample.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DWall.VCard\Dwall.VCard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SampleCards.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SampleCards.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="SampleCards.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>SampleCards.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

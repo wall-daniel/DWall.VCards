@@ -1,6 +1,6 @@
 
 using System;
-using Thought.vCards;
+using DWall.VCard;
 using NUnit.Framework;
 
 namespace Tests

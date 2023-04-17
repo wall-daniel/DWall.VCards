@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 using NUnit.Framework;
-using Thought.vCards;
+using DWall.VCard;
 
 namespace Tests.Samples
 {

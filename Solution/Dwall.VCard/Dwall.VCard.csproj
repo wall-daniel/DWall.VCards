@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>DWall.VCards</AssemblyName>
+    <RootNamespace>DWall.VCards</RootNamespace>
+    <Company>N/A</Company>
+    <Authors>Daniel Wall</Authors>
+    <Product>VCard Nuget</Product>
+    <Description>Parse and create VCard files.</Description>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <DocumentationFile>xmldocs/DWall.VCards.xml</DocumentationFile>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="WarningMessages.Designer.cs">
+      <DependentUpon>WarningMessages.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="WarningMessages.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>WarningMessages.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="WarningMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarningMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="WarningMessages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WarningMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="History.txt" />
+    <Content Include="KnownIssues.txt" />
+    <Content Include="License.txt" />
+  </ItemGroup>
+  
+</Project>

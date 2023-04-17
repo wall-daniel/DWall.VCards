@@ -3,7 +3,7 @@ using System;
 using System.Collections.Specialized;
 using System.IO;
 using NUnit.Framework;
-using Thought.vCards;
+using DWall.VCard;
 
 namespace Tests
 {
